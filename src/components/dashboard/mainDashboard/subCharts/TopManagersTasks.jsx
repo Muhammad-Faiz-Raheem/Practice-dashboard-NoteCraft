@@ -90,15 +90,17 @@ function TopManagersTasks({ isXSmUp }) {
         borderRadius: "15px",
         height: "250px",
         overflow: "auto",
+        position: "relative",
       }}
     >
-      <Box height="150px" position="relative">
+      <Box height="150px">
         <Box width="100%" height="100%">
           <Stack
             direction="row"
             justifyContent="space-between"
             padding="15px 30px"
             width="100%"
+            spacing={2}
           >
             <Box>
               <Typography
@@ -166,7 +168,8 @@ function TopManagersTasks({ isXSmUp }) {
             spacing={1}
             alignItems="center"
             position="absolute"
-            bottom={-60}
+            bottom={10}
+            left={5}
             justifyContent="center"
             width="95%"
           >
