@@ -132,7 +132,7 @@ function Leads() {
       <Stack
         spacing={1}
         overflow="auto"
-        height="180px"
+        height="155px"
         sx={{ scrollbarWidth: "none" }}
       >
         {data.map((data) => (
