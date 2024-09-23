@@ -1,10 +1,11 @@
 import MainComponent from "../features/main/MainComponent";
+import MainReports from "../features/main/MainReports";
 
 function Reports() {
   return (
     <div>
       <MainComponent>
-        <h1 style={{ padding: "30px" }}>Reports</h1>
+        <MainReports />
       </MainComponent>
     </div>
   );
