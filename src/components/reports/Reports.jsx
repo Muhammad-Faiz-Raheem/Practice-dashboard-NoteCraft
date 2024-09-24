@@ -21,7 +21,7 @@ function Reports({ isMdUp, isSmUp, isXSmUp }) {
         </Box>
 
         <Box>
-          <ChannelsTable />
+          <ChannelsTable isMdUp={isMdUp} isSmUp={isSmUp} isXSmUp={isXSmUp} />
         </Box>
       </Stack>
     </Box>

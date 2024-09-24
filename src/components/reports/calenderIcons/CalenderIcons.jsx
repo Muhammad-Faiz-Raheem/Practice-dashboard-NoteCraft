@@ -7,14 +7,15 @@ function CalenderIcons({ isMdUp, isSmUp, isXSmUp }) {
     <Box>
       <Stack
         direction="row"
-        justifyContent="space-between"
+        justifyContent={isSmUp ? "space-between" : "center"}
         spacing={2}
         alignItems="center"
+        flexWrap="wrap"
       >
         <Box>
           <Calender isMdUp={isMdUp} isSmUp={isSmUp} isXSmUp={isXSmUp} />
         </Box>
-        <Box>
+        <Box order={isSmUp ? "" : "-1"}>
           <Icons />
         </Box>
       </Stack>

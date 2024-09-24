@@ -30,7 +30,7 @@ function Filters({ isSmUp, isXSmUp }) {
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DemoContainer
           components={["SingleInputDateRangeField"]}
-          sx={{ width: "245px", overflow: "hidden" }}
+          sx={{ width: "255px", overflow: "hidden" }}
         >
           <DateRangePicker
             slots={{ field: SingleInputDateRangeField }}
@@ -46,7 +46,7 @@ function Filters({ isSmUp, isXSmUp }) {
                     color: "common.black",
                     padding: "6px", // Control padding for smaller height
                     borderRadius: "30px", // Rounded corners
-                    width: "230px", // Custom width
+                    width: isSmUp ? "230px" : "250px", // Custom width
                     border: "1px solid", // Border color
                     borderColor: "warning.main",
                     cursor: "pointer",
@@ -114,7 +114,7 @@ function Filters({ isSmUp, isXSmUp }) {
         </Stack>
       ) : (
         <FormControl
-          sx={{ minWidth: isXSmUp ? 120 : 230, mt: "8px" }}
+          sx={{ minWidth: isXSmUp ? 120 : 250, mt: "8px" }}
           size="small"
         >
           <Select

@@ -4,7 +4,7 @@ import { Box, Button, Stack } from "@mui/material";
 function Reports() {
   return (
     <Box>
-      <Stack direction="row" spacing={1}>
+      <Stack direction="row" rowGap={2} columnGap={1} flexWrap="wrap">
         <CustomButton borderColor={"warning.main"}>Main</CustomButton>
         <CustomButton>Devices</CustomButton>
         <CustomButton>Pay cahnnels</CustomButton>

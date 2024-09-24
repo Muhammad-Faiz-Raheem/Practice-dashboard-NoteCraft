@@ -7,9 +7,11 @@ function ReportsIcons() {
     <Box padding="5px">
       <Stack
         direction="row"
-        spacing={2}
+        columnGap={2}
+        rowGap={2}
         justifyContent="space-between"
         alignItems="center"
+        flexWrap="wrap"
       >
         <Box>
           <Reports />

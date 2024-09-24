@@ -227,7 +227,7 @@ const tableData = [
   },
 ];
 
-function ChannelsTable() {
+function ChannelsTable({ isMdUp }) {
   return (
     <Box
       sx={{
@@ -241,12 +241,13 @@ function ChannelsTable() {
         sx={{
           maxHeight: 440,
           borderRadius: "15px",
+          scrollbarWidth: isMdUp ? "" : "none",
         }}
       >
         <Table stickyHeader aria-label="sticky table">
           <Header />
 
-          <TablesBody tableData={tableData} />
+          <TablesBody tableData={tableData} isMdUp={isMdUp} />
         </Table>
       </TableContainer>
     </Box>
